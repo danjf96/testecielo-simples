@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "3bfc74d5-5d8d-4a41-99da-890a7c4b69a6",
+		"name": "teste-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/pay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "daniel",
+							"type": "text"
+						},
+						{
+							"key": "card",
+							"value": "0000000000000001",
+							"type": "text"
+						},
+						{
+							"key": "validade",
+							"value": "12/2022",
+							"type": "text"
+						},
+						{
+							"key": "band",
+							"value": "VISA",
+							"type": "text"
+						},
+						{
+							"key": "cvv",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "valor",
+							"value": "15700",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/pay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "daniel",
+							"type": "text"
+						},
+						{
+							"key": "card",
+							"value": "0000000000000001",
+							"type": "text"
+						},
+						{
+							"key": "validade",
+							"value": "12/2018",
+							"type": "text"
+						},
+						{
+							"key": "band",
+							"value": "VISA",
+							"type": "text"
+						},
+						{
+							"key": "cvv",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "valor",
+							"value": "15700",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pay"
+					]
+				},
+				"description": "error"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/pay/boleto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "cpf_cnpj",
+							"value": "99999999999",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "999999999",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "mg",
+							"type": "text"
+						},
+						{
+							"key": "rua",
+							"value": "tes  teste",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "850",
+							"type": "text"
+						},
+						{
+							"key": "typeident",
+							"value": "CPF",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pay/boleto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pay",
+						"boleto"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "teste",
+							"disabled": true
+						},
+						{
+							"key": "cpf_cnpj",
+							"value": "0000000001",
+							"disabled": true
+						},
+						{
+							"key": "cep",
+							"value": "99",
+							"disabled": true
+						}
+					]
+				},
+				"description": "boleto"
+			},
+			"response": []
+		}
+	]
+}
